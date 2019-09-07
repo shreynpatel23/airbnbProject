@@ -66,17 +66,26 @@
     max-width: 90%;
   }
 }
-.place-card{
-    position: relative;
-    border-radius: 5px;
-    cursor: pointer;
+
+.place-card {
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
 .scroll {
-    width: 100%;
-    overflow-x: scroll;
-  }
+  width: 100%;
+  overflow-x: scroll;
+}
+
 .align-center {
   padding: 0 40px;
+}
+.hover{
+    transition: 0.4s;
+}
+.hover:hover{
+    transform: scale(0.96);
 }
 
 @media screen and (max-width:767px) {

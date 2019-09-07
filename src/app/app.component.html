@@ -1,7 +1,14 @@
 <header id="header">
   <div class="back">
     <nav class="navbar navbar-expand-xl navbar-dark">
-      <a class="navbar-brand">#</a>
+      <a class="navbar-brand">
+        <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false"
+          style="height:1em;width:1em;display:block;fill:currentColor">
+          <path
+            d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z">
+          </path>
+        </svg>
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -76,7 +83,7 @@
   <div class="align-center">
     <h3 class="text-secondary py-3 px-2">Explore Airbnb</h3>
     <div class="d-flex align-items-center justify-content-between scroll">
-      <div class="px-2">
+      <div class="px-2 hover">
         <div class="card" style="cursor: pointer">
           <div class="d-flex align-items-center">
             <div class="image1"></div>
@@ -86,7 +93,7 @@
           </div>
         </div>
       </div>
-      <div class="px-2">
+      <div class="px-2 hover">
         <div class="card" style="cursor: pointer">
           <div class="d-flex align-items-center">
             <div class="image2"></div>
@@ -96,7 +103,7 @@
           </div>
         </div>
       </div>
-      <div class="px-2">
+      <div class="px-2 hover">
         <div class="card" style="cursor: pointer">
           <div class="d-flex align-items-center">
             <div class="image3"></div>
@@ -106,7 +113,7 @@
           </div>
         </div>
       </div>
-      <div class="px-2">
+      <div class="px-2 hover">
         <div class="card" style="cursor: pointer">
           <div class="d-flex align-items-center">
             <div class="image4"></div>
@@ -123,7 +130,7 @@
   <div class="align-center">
     <h3 class="text-secondary py-2 px-2">Introducing Airbnb Luxe</h3>
     <div class="d-none d-md-block">
-      <div class="d-flex align-items-center p-2" style="background-color: rgb(244, 242, 239);cursor: pointer;">
+      <div class="d-flex align-items-center p-2 hover" style="background-color: rgb(244, 242, 239);cursor: pointer;">
         <div class="px-3">
           <div class="px-4">
             <div class="py-2">
@@ -154,7 +161,7 @@
       </div>
     </div>
     <div class="d-block d-md-none">
-      <div class="row no-gutters p-2" style="background-color: rgb(244, 242, 239); cursor: pointer;">
+      <div class="row no-gutters p-2 hover" style="background-color: rgb(244, 242, 239); cursor: pointer;">
         <div class="col-md-6">
           <div class="px-2">
             <div class="py-2">
@@ -190,7 +197,7 @@
   <div class="align-center">
     <h3 class="text-secondary py-3 px-2">Recommended for you</h3>
     <div class="d-flex align-items-center justify-content-between scroll">
-      <div class="px-2" *ngFor="let recommendation of recommendations">
+      <div class="px-2 hover" *ngFor="let recommendation of recommendations">
         <div class="place-card">
           <img src="{{recommendation.source}}" alt="" width="240px" height="300px">
           <div class="text-center text-white"
@@ -208,7 +215,7 @@
     <h3 class="text-secondary pt-3 px-2">Introducing Airbnb Luxe</h3>
     <p class="px-2">Extraordinary homes with five-star everything</p>
     <div class="d-flex align-items-center justify-content-between scroll">
-      <div class="px-2" *ngFor="let luxe of luxes">
+      <div class="px-2 hover" *ngFor="let luxe of luxes">
         <div class="place-card">
           <img src="{{luxe.source}}" alt="" width="415px" height="250px">
         </div>
@@ -246,7 +253,7 @@
   <div class="align-center">
     <h3 class="text-secondary py-3 px-2">Places to stay around the world</h3>
     <div class="d-flex align-items-center justify-content-around flex-wrap">
-      <div class="px-2 py-3" *ngFor="let place of places">
+      <div class="px-2 py-3 hover" *ngFor="let place of places">
         <div class="card border-0" style="width:300px;cursor: pointer;">
           <img src="{{place.source}}" alt="" width="300px" height="200px">
           <h5 class="mb-0 py-1" style="color:rgb(118, 118, 118);">{{place.title}}</h5>
@@ -260,7 +267,7 @@
   <div class="align-center">
     <h3 class="text-secondary py-3 px-2">Head to the beach</h3>
     <div class="d-flex align-items-center justify-content-between scroll">
-      <div class="px-2" *ngFor="let beach of beaches">
+      <div class="px-2 hover" *ngFor="let beach of beaches">
         <div class="place-card">
           <img src="{{beach.source}}" alt="" width="240px" height="300px">
           <div class="text-center text-white" [ngStyle]="{'bottom':(beach.price === null) ? '15%':'3%'}"
@@ -278,8 +285,8 @@
     <h3 class="text-secondary pt-3 px-2 mb-0">Top-rated experiences</h3>
     <p class="px-2">Book activities led by local hosts on your next trip</p>
     <div class="d-flex align-items-center justify-content-between scroll">
-      <div class="px-2" *ngFor="let experience of experiences">
-        <div class="card border-0" style="width: 214px">
+      <div class="px-2 hover" *ngFor="let experience of experiences">
+        <div class="card border-0" style="width: 214px;cursor: pointer;">
           <img src="{{experience.source}}" alt="" width="200px" height="250px">
         </div>
         <div class="py-1">
@@ -297,8 +304,8 @@
     <h3 class="mb-0 text-secondary pt-3 px-2">Experiences in the spotlight</h3>
     <p class="px-2">One-of-a-kind activities hosted by locals, created for the curious</p>
     <div class="d-flex align-items-center justify-content-between scroll">
-      <div class="px-2" *ngFor="let exp of spotlightExpericens">
-        <div class="card" style="border-radius:16px;box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;">
+      <div class="px-2 hover" *ngFor="let exp of spotlightExpericens">
+        <div class="card" style="border-radius:16px;box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;cursor: pointer;">
           <div class="card-header p-0">
             <img src="{{exp.source}}" alt="" width="240px" height="240px"
               style="border-top-left-radius: 16px;border-top-right-radius: 16px;">
@@ -318,7 +325,7 @@
     <p class="px-2">Find top-rated places to stay with amenities you need</p>
     <div class="row px-2">
       <div class="col-md-6">
-        <div class="py-2">
+        <div class="py-2 hover" style="cursor: pointer;">
           <img src="https://a0.muscache.com/pictures/f759fb5d-0fd7-4f80-b1a2-23a1915298f4.jpg" alt="" class="img-fluid"
             style="border-radius: 8px">
           <div class="py-2">
@@ -330,7 +337,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div class="py-2">
+        <div class="py-2 hover" style="cursor: pointer;">
           <img src="https://a0.muscache.com/pictures/f8539f57-e950-4d82-a834-97bcf9239b1c.jpg" alt="" class="img-fluid"
             style="border-radius: 8px">
           <div class="py-2">
@@ -361,7 +368,8 @@
             <div class="px-2">
               <h5 class="mb-0" style="font-size: 18px;font-weight: bold">24/7 customer support</h5>
               <div class="py-1">
-                <p class="mb-0" style="font-size: 14px;font-weight: 400">If you need help while traveling or hosting, contact us at our toll free number:</p>
+                <p class="mb-0" style="font-size: 14px;font-weight: 400">If you need help while traveling or hosting,
+                  contact us at our toll free number:</p>
               </div>
             </div>
           </div>
@@ -379,8 +387,8 @@
             <div class="px-2">
               <h5 class="mb-0" style="font-size: 18px;font-weight: bold">₹6,00,00,000 host guarantee</h5>
               <div class="py-1">
-                <p class="mb-0" style="font-size: 14px;font-weight: 400">Hosts are protected against property damages for up to ₹6,00,00,000. <a href="#"
-                    style="text-decoration: none">Learn more</a> </p>
+                <p class="mb-0" style="font-size: 14px;font-weight: 400">Hosts are protected against property damages
+                  for up to ₹6,00,00,000. <a href="#" style="text-decoration: none">Learn more</a> </p>
               </div>
             </div>
           </div>
@@ -398,7 +406,8 @@
             <div class="px-2">
               <h5 class="mb-0" style="font-size: 18px;font-weight: bold">Verified ID</h5>
               <div class="py-1">
-                <p class="mb-0" style="font-size: 14px;font-weight: 400">We aim to build a trusted community by giving you more info when you're deciding who to
+                <p class="mb-0" style="font-size: 14px;font-weight: 400">We aim to build a trusted community by giving
+                  you more info when you're deciding who to
                   host or stay with.</p>
               </div>
             </div>
